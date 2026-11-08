@@ -1,41 +1,62 @@
 {
   "schemaVersion": 1,
-  "status": "ready",
-  "verification": "mock-only",
-  "releaseEligible": true,
-  "maintainer": "jannikco",
-  "license": "MIT",
-  "sourceRevision": "2e150221c618f118effcbca5607ff44ea5ae63fd280b7bc32cb5a82aa91b89e9",
-  "evidence": [
-    "Source-backed provider setup metadata",
-    "Offline configuration and MCP protocol tests"
-  ],
-  "provenance": [
-    "https://developer.act-on.com/reference"
-  ],
   "id": "act-on-mcp",
   "kind": "mcp-setup",
   "product": "pipmcp",
   "title": "Act-On MCP setup and connection checker",
-  "description": "Generate Act-On MCP client configuration, inspect available tools and validate hosted endpoint access through PipMCP.",
+  "description": "Prepare Act-On for AI workflows with a PipMCP setup doctor, authenticated discovery and coding-agent instructions.",
+  "status": "ready",
+  "verification": "mock-only",
+  "releaseEligible": false,
   "operationIds": [],
+  "maintainer": "jannikco",
+  "license": "MIT",
+  "attributionSlug": "github-act-on-mcp",
+  "sourceRevision": "178ca327a5d290b78b94510f11fe901ae9a18fad47b35d1fe9239d65618a5050",
+  "qualityVersion": 2,
+  "artifactType": "setup",
+  "evidence": [
+    "Gateway HTTP transport fixtures",
+    "Generated stdio wrapper discovery/call fixtures"
+  ],
+  "provenance": [
+    "https://developer.act-on.com/reference"
+  ],
+  "utility": {
+    "problem": "Prepare Act-On and inspect your hosted setup",
+    "output": "Offline setup plan and authenticated discovery diagnostics"
+  },
   "appSlug": "act-on",
   "appName": "Act-On",
-  "providerDocs": "https://developer.act-on.com/reference",
-  "providerWebsite": "https://act-on.com/",
-  "authentication": {
-    "type": "token_exchange",
-    "requiredCredentialFields": [
-      "provider_exchange_credentials"
-    ],
-    "requiredHeaderNames": [],
-    "helpUrl": "https://developer.act-on.com/reference/grant-type-password",
-    "tenantRequired": false,
-    "accountParameterNames": [
-      "account_id"
-    ]
+  "maintenanceOnly": true,
+  "executionAuthority": "pipmcp-gateway",
+  "version": "1.0.0",
+  "agentReady": true,
+  "capabilityEvidence": {
+    "local": {
+      "level": "Tested",
+      "operations": [
+        {
+          "name": "gateway_transport",
+          "level": "Tested",
+          "method": "contract-fixture",
+          "evidenceRefs": [
+            "Generated gateway/stdio fixtures"
+          ]
+        }
+      ],
+      "evidenceRefs": [
+        "Generated gateway/stdio fixtures"
+      ],
+      "mode": "local"
+    },
+    "managed": {
+      "level": "Documented",
+      "operations": [],
+      "evidenceRefs": [],
+      "mode": "managed"
+    }
   },
-  "attributionSlug": "github-act-on-mcp",
   "factory": "leadadapter-pipmcp",
-  "generatorVersion": 1
+  "generatorVersion": 3
 }

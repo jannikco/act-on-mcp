@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "version": "1.0.0",
+  "product": "pipmcp",
+  "credential": "PIPMCP_API_KEY",
+  "skills": [
+    {
+      "name": "pipmcp-act-on",
+      "description": "Connect AI agents to Act-On using one PipMCP API key and actual hosted tool discovery."
+    }
+  ],
+  "files": {
+    "skills/pipmcp-act-on/SKILL.md": "8769f710bcf455d46e127f4776edf74b6321221310fc33ec74d86b22cb1c6514"
+  }
+}

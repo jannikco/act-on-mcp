@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "act-on-mcp",
+  "version": "1.0.0",
+  "product": "pipmcp",
+  "artifactType": "Setup",
+  "credential": "PIPMCP_API_KEY",
+  "connectorId": "act-on",
+  "executionAuthority": "https://pipmcp.com/api/v1",
+  "inventory": "authenticated-dynamic",
+  "verification": {
+    "transport": "Tested",
+    "providerExecution": "Documented"
+  },
+  "skills": [
+    "pipmcp-act-on"
+  ],
+  "offlineMode": "plan-and-fixtures-only",
+  "historicalVersions": "Older MIT local runtimes remain in Git history"
+}
