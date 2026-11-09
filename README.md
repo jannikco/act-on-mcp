@@ -1,3 +1,72 @@
+# Plan a campaign-planning handoff with clear contact permissions
+
+**Act-On + your AI assistant · powered by PipMCP**
+
+You want a campaign-planning handoff with clear contact permissions, but first need to establish what Act-On can support and what is ready in your account.
+
+**Made for:** Marketing operations teams
+
+This is a setup helper. You will need PipMCP and access to Act-On to complete a connection.
+
+## Ask your AI to set this up
+
+Paste this into a coding assistant that can open project files and run commands, such as Codex, Claude Code or Grok Build. You do not need to understand the code first.
+
+```text
+Help me use this project: https://github.com/jannikco/act-on-mcp
+
+I'm not a programmer. My goal is: Plan a campaign-planning handoff with clear contact
+permissions.
+
+Read the project instructions and set it up in a new folder without overwriting my work.
+Guide me through PipMCP and its private key setup; never ask me to paste secrets into this
+chat. Start with the documented setup plan and explain what is still needed to connect my
+app. Explain the result in plain English. Ask before changing records, sending messages or
+publishing anything.
+```
+
+## Three useful things to ask for
+
+```text
+Help me plan a campaign-planning handoff with clear contact permissions with Act-On.
+Explain the setup steps in plain English.
+```
+
+```text
+Compare that goal with the linked Act-On documentation. Tell me whether an import, account
+details or manual setup is still needed.
+```
+
+```text
+Check which suitable actions are actually available in my PipMCP account. If none are
+ready, stop with a missing-step checklist instead of pretending the business task has run.
+```
+
+## Your path to a real result
+
+```mermaid
+flowchart LR
+  A["Define your goal"] --> B["Check connection needs"] --> C["Complete PipMCP setup"] --> D["Try an available<br/>action"]
+```
+
+1. [Open the connection guide](https://pipmcp.com/github/start?app=act-on&integration=act-on-mcp&utm_source=github&utm_campaign=github-act-on-mcp&utm_content=people-first-readme) and check whether the app is available or needs an API import.
+2. Let your AI explain the required PipMCP account and provider permissions.
+3. Run the documented setup check. A successful check is not proof that provider actions ran.
+
+**What to expect:** You get a setup plan and connection checks. This project does not bundle a ready-made Act-On action set. Importing an API or completing manual PipMCP settings may still be needed before any business task can run.
+
+Add your PipMCP key privately in your project settings. Keep keys out of chat and public repositories.
+
+## Keep going
+
+- [Find another useful integration](https://github.com/jannikco/pipmcp-connectors)
+- [Connect an API you control](https://github.com/jannikco/openapi-to-mcp)
+- [Try the GitHub project](https://github.com/jannikco/github-mcp)
+
+<details>
+<summary>Technical reference: installation commands, exact capabilities and troubleshooting</summary>
+
+<!-- people-first:technical:start -->
 # Act-On MCP setup and connection checker
 
 **Prepare Act-On for AI workflows with a PipMCP setup doctor, agent instructions and authenticated connector discovery.**
@@ -65,3 +134,7 @@ If the provider is not already available in your workspace, import your reviewed
 ## Provider setup reference
 
 [Official provider documentation](https://developer.act-on.com/reference). Credentials are entered in PipMCP; this package does not accept or store provider secrets.
+
+<!-- people-first:technical:end -->
+
+</details>
